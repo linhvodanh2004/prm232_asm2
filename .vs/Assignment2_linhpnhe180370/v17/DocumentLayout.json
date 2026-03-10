@@ -1,0 +1,290 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|d:\\fpt\\prn232\\assignment2_linhpnhe180370\\webclient\\pages\\book.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\book.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|d:\\fpt\\prn232\\assignment2_linhpnhe180370\\webclient\\pages\\author.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\author.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|d:\\fpt\\prn232\\assignment2_linhpnhe180370\\webclient\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|solutionrelative:webclient\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|d:\\fpt\\prn232\\assignment2_linhpnhe180370\\webclient\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|solutionrelative:webclient\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|d:\\fpt\\prn232\\assignment2_linhpnhe180370\\webclient\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|solutionrelative:webclient\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|d:\\fpt\\prn232\\assignment2_linhpnhe180370\\webclient\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|solutionrelative:webclient\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|d:\\fpt\\prn232\\assignment2_linhpnhe180370\\webclient\\hubs\\apphub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|solutionrelative:webclient\\hubs\\apphub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|d:\\fpt\\prn232\\assignment2_linhpnhe180370\\webclient\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|solutionrelative:webclient\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|d:\\fpt\\prn232\\assignment2_linhpnhe180370\\webclient\\controllers\\api\\authorapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|solutionrelative:webclient\\controllers\\api\\authorapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|d:\\fpt\\prn232\\assignment2_linhpnhe180370\\webclient\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|solutionrelative:webclient\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|d:\\fpt\\prn232\\assignment2_linhpnhe180370\\webclient\\models\\bookcreateupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|solutionrelative:webclient\\models\\bookcreateupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|d:\\fpt\\prn232\\assignment2_linhpnhe180370\\webclient\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|solutionrelative:webclient\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|d:\\fpt\\prn232\\assignment2_linhpnhe180370\\webclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|solutionrelative:webclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|d:\\fpt\\prn232\\assignment2_linhpnhe180370\\webclient\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|solutionrelative:webclient\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|d:\\fpt\\prn232\\assignment2_linhpnhe180370\\webclient\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|solutionrelative:webclient\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|d:\\fpt\\prn232\\assignment2_linhpnhe180370\\webclient\\models\\bookauthor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52BA7263-878A-4144-AF2A-6B60B89DA2F9}|WebClient\\WebClient.csproj|solutionrelative:webclient\\models\\bookauthor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Book.html",
+              "DocumentMoniker": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Pages\\Book.html",
+              "RelativeDocumentMoniker": "WebClient\\Pages\\Book.html",
+              "ToolTip": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Pages\\Book.html",
+              "RelativeToolTip": "WebClient\\Pages\\Book.html",
+              "ViewState": "AgIAAKYBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-03-10T17:36:55.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Author.html",
+              "DocumentMoniker": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Pages\\Author.html",
+              "RelativeDocumentMoniker": "WebClient\\Pages\\Author.html",
+              "ToolTip": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Pages\\Author.html",
+              "RelativeToolTip": "WebClient\\Pages\\Author.html",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAAAHwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-03-10T17:35:39.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Services\\BookService.cs",
+              "RelativeDocumentMoniker": "WebClient\\Services\\BookService.cs",
+              "ToolTip": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Services\\BookService.cs",
+              "RelativeToolTip": "WebClient\\Services\\BookService.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T17:34:32.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthorService.cs",
+              "DocumentMoniker": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Services\\AuthorService.cs",
+              "RelativeDocumentMoniker": "WebClient\\Services\\AuthorService.cs",
+              "ToolTip": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Services\\AuthorService.cs",
+              "RelativeToolTip": "WebClient\\Services\\AuthorService.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T17:34:04.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebClient\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebClient\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T17:33:44.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppHub.cs",
+              "DocumentMoniker": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Hubs\\AppHub.cs",
+              "RelativeDocumentMoniker": "WebClient\\Hubs\\AppHub.cs",
+              "ToolTip": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Hubs\\AppHub.cs",
+              "RelativeToolTip": "WebClient\\Hubs\\AppHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T17:33:22.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebClient\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebClient\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T17:33:19.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthorApiController.cs",
+              "DocumentMoniker": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Controllers\\Api\\AuthorApiController.cs",
+              "RelativeDocumentMoniker": "WebClient\\Controllers\\Api\\AuthorApiController.cs",
+              "ToolTip": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Controllers\\Api\\AuthorApiController.cs",
+              "RelativeToolTip": "WebClient\\Controllers\\Api\\AuthorApiController.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T17:32:01.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BookCreateUpdateDto.cs",
+              "DocumentMoniker": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Models\\BookCreateUpdateDto.cs",
+              "RelativeDocumentMoniker": "WebClient\\Models\\BookCreateUpdateDto.cs",
+              "ToolTip": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Models\\BookCreateUpdateDto.cs",
+              "RelativeToolTip": "WebClient\\Models\\BookCreateUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T04:46:47.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Program.cs",
+              "RelativeDocumentMoniker": "WebClient\\Program.cs",
+              "ToolTip": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Program.cs",
+              "RelativeToolTip": "WebClient\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T03:52:17.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\appsettings.json",
+              "RelativeDocumentMoniker": "WebClient\\appsettings.json",
+              "ToolTip": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\appsettings.json",
+              "RelativeToolTip": "WebClient\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-06T03:37:38.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "WebClient\\Models\\AppDbContext.cs",
+              "ToolTip": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "WebClient\\Models\\AppDbContext.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAowAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T03:35:38.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BookAuthor.cs",
+              "DocumentMoniker": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Models\\BookAuthor.cs",
+              "RelativeDocumentMoniker": "WebClient\\Models\\BookAuthor.cs",
+              "ToolTip": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Models\\BookAuthor.cs",
+              "RelativeToolTip": "WebClient\\Models\\BookAuthor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T03:34:52.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Author.cs",
+              "DocumentMoniker": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Models\\Author.cs",
+              "RelativeDocumentMoniker": "WebClient\\Models\\Author.cs",
+              "ToolTip": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Models\\Author.cs",
+              "RelativeToolTip": "WebClient\\Models\\Author.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwCEAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T03:34:42.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "WebClient\\Models\\Book.cs",
+              "ToolTip": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Models\\Book.cs",
+              "RelativeToolTip": "WebClient\\Models\\Book.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAmwCMAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T03:34:21.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Publisher.cs",
+              "DocumentMoniker": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Models\\Publisher.cs",
+              "RelativeDocumentMoniker": "WebClient\\Models\\Publisher.cs",
+              "ToolTip": "D:\\fpt\\PRN232\\Assignment2_linhpnhe180370\\WebClient\\Models\\Publisher.cs",
+              "RelativeToolTip": "WebClient\\Models\\Publisher.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA+wBcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T03:34:12.724Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

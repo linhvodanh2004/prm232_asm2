@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Management - eBookStore</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css"
+        rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Select2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- SignalR JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+</head>
+
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4 shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">eBookStore</a>
+            <span class="navbar-text text-white">Book Management Module</span>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- Search Banner -->
+        <div class="card shadow-sm border-0 mb-4">
+            <div class="card-body">
+                <h5 class="card-title text-primary fw-bold mb-3">Search Books</h5>
+                <div class="input-group">
+                    <input type="text" id="searchInput" class="form-control form-control-lg"
+                        placeholder="Search by Title or Author's Email...">
+                    <button class="btn btn-primary px-4 fw-semibold" id="btnSearch" type="button">Search</button>
+                    <button class="btn btn-outline-secondary px-4 fw-semibold" id="btnResetSearch"
+                        type="button">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Actions and Table -->
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="card-title text-primary fw-bold m-0">Book Operations</h5>
+                    <button class="btn btn-success fw-semibold shadow-sm" onclick="showAddModal()">+ Add New
+                        Book</button>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle border" id="booksTable">
+                        <thead class="table-light">
+                            <tr>
+                                <th>ID</th>
+                                <th>Title</th>
+                                <th>Type</th>
+                                <th>Price</th>
+                                <th>Publisher</th>
+                                <th>Published Date</th>
+                                <th class="text-end">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="booksTableBody">
+                            <!-- Data will be loaded here via AJAX -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add/Edit Modal -->
+    <div class="modal fade" id="bookModal" tabindex="-1" aria-labelledby="bookModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content shadow">
+                <form id="bookForm">
+                    <div class="modal-header text-white bg-primary">
+                        <h5 class="modal-title fw-bold" id="bookModalLabel">Book Details</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" id="bookId" name="bookId" value="0" />
+
+                        <div class="row g-3">
+                            <div class="col-md-12">
+                                <label class="form-label fw-semibold">Title <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="title" name="title" required
+                                    maxlength="300">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Type</label>
+                                <input type="text" class="form-control" id="type" name="type" maxlength="100">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Publisher <span
+                                        class="text-danger">*</span></label>
+                                <select class="form-select" id="pubId" name="pubId" required>
+                                    <option value="" disabled selected>Select a publisher</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label fw-semibold">Price</label>
+                                <input type="number" step="0.01" min="0" class="form-control" id="price" name="price"
+                                    value="0.00">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label fw-semibold">Advance</label>
+                                <input type="number" step="0.01" min="0" class="form-control" id="advance"
+                                    name="advance" value="0.00">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label fw-semibold">Royalty</label>
+                                <input type="number" step="0.01" min="0" class="form-control" id="royalty"
+                                    name="royalty" value="0.00">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">YTD Sales</label>
+                                <input type="number" min="0" class="form-control" id="ytdSales" name="ytdSales"
+                                    value="0">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Published Date</label>
+                                <input type="datetime-local" class="form-control" id="publishedDate"
+                                    name="publishedDate">
+                                <small class="text-muted">Defaults to current date if left blank.</small>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label fw-semibold">Authors</label>
+                                <select class="form-select" id="authorIds" name="authorIds" multiple="multiple"
+                                    style="width: 100%;">
+                                </select>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label fw-semibold">Notes</label>
+                                <textarea class="form-control" id="notes" name="notes" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-light">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary px-4 fw-semibold" id="btnSave">Save
+                            changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const apiUrl = '/api/books';
+        const publishersApiUrl = '/api/publishers';
+        const authorsApiUrl = '/api/authors';
+        let modalInstance = null;
+
+        $(document).ready(function () {
+            modalInstance = new bootstrap.Modal(document.getElementById('bookModal'));
+
+            // Initialize Select2
+            $('#authorIds').select2({
+                theme: 'bootstrap-5',
+                placeholder: "Select Authors",
+                allowClear: true,
+                closeOnSelect: false,
+                tags: true
+            });
+
+            loadBooks();
+            loadDropdowns();
+
+            // SignalR Connection
+            const connection = new signalR.HubConnectionBuilder()
+                .withUrl("/appHub")
+                .withAutomaticReconnect()
+                .build();
+
+            connection.on("DropdownsUpdated", function () {
+                console.log("Realtime event received! Refreshing dropdowns...");
+                // Preserve current selections before reloading
+                let currentPub = $('#pubId').val();
+                let currentAuths = $('#authorIds').val();
+
+                loadDropdowns(currentPub, currentAuths);
+            });
+
+            connection.start().catch(function (err) {
+                return console.error(err.toString());
+            });
+
+            $('#btnSearch').click(function () {
+                var query = $('#searchInput').val();
+                if (query) {
+                    searchBooks(query);
+                } else {
+                    loadBooks();
+                }
+            });
+
+            $('#btnResetSearch').click(function () {
+                $('#searchInput').val('');
+                loadBooks();
+            });
+
+            $('#bookForm').submit(function (e) {
+                e.preventDefault();
+                // Custom Front-end validation manually enforced
+                let isValid = true;
+                if (parseFloat($('#price').val()) < 0) isValid = false;
+                if (parseFloat($('#advance').val()) < 0) isValid = false;
+                if (parseFloat($('#royalty').val()) < 0) isValid = false;
+                if (parseInt($('#ytdSales').val()) < 0) isValid = false;
+
+                if (!isValid) {
+                    alert("Please ensure Price, Advance, Royalty, and YTD Sales are 0 or greater.");
+                    return;
+                }
+
+                saveBook();
+            });
+        });
+
+        function loadDropdowns(selectedPubId = null, selectedAuthIds = null) {
+            $.get(publishersApiUrl, function (data) {
+                let pubSelect = $('#pubId');
+                pubSelect.empty();
+                pubSelect.append('<option value="" disabled selected>Select a publisher</option>');
+                data.forEach(p => {
+                    let selected = (selectedPubId == p.pubId) ? 'selected' : '';
+                    pubSelect.append(`<option value="${p.pubId}" ${selected}>${p.publisherName}</option>`);
+                });
+            });
+
+            $.get(authorsApiUrl, function (data) {
+                let authSelect = $('#authorIds');
+                authSelect.empty();
+                data.forEach(a => {
+                    authSelect.append(`<option value="${a.authorId}">${a.firstName} ${a.lastName} (${a.emailAddress})</option>`);
+                });
+
+                if (selectedAuthIds) {
+                    authSelect.val(selectedAuthIds);
+                }
+                authSelect.trigger('change');
+            });
+        }
+
+        function loadBooks() {
+            $.ajax({
+                url: apiUrl,
+                method: 'GET',
+                success: function (data) {
+                    renderTable(data);
+                },
+                error: function (err) {
+                    console.error('Error loading books', err);
+                    alert('Failed to load books. Check console.');
+                }
+            });
+        }
+
+        function searchBooks(query) {
+            $.ajax({
+                url: apiUrl + '/search?query=' + encodeURIComponent(query),
+                method: 'GET',
+                success: function (data) {
+                    renderTable(data);
+                },
+                error: function (err) {
+                    console.error('Error searching books', err);
+                    alert('Search failed.');
+                }
+            });
+        }
+
+        function renderTable(books) {
+            var tbody = $('#booksTableBody');
+            tbody.empty();
+
+            if (books.length === 0) {
+                tbody.append('<tr><td colspan="7" class="text-center py-4 text-muted">No books found.</td></tr>');
+                return;
+            }
+
+            books.forEach(function (book) {
+                let pubDate = book.publishedDate ? new Date(book.publishedDate).toLocaleDateString() : 'N/A';
+                let price = book.price ? '$' + parseFloat(book.price).toFixed(2) : '$0.00';
+                let row = `<tr>
+                <td><strong>${book.bookId}</strong></td>
+                <td>${book.title}</td>
+                <td><span class="badge bg-secondary">${book.type || 'N/A'}</span></td>
+                <td>${price}</td>
+                <td>${book.publisher ? book.publisher.publisherName : book.pubId}</td>
+                <td>${pubDate}</td>
+                <td class="text-end">
+                    <button class="btn btn-sm btn-outline-primary me-2 fw-semibold" onclick="showEditModal(${book.bookId})">Edit</button>
+                    <button class="btn btn-sm btn-outline-danger fw-semibold" onclick="deleteBook(${book.bookId})">Delete</button>
+                </td>
+            </tr>`;
+                tbody.append(row);
+            });
+        }
+
+        function showAddModal() {
+            $('#bookForm')[0].reset();
+            $('#authorIds').val([]).trigger('change'); // clear multiple select
+            $('#bookId').val(0);
+            $('#bookModalLabel').text('Add New Book');
+            modalInstance.show();
+        }
+
+        function showEditModal(id) {
+            $.ajax({
+                url: apiUrl + '/' + id,
+                method: 'GET',
+                success: function (book) {
+                    $('#bookId').val(book.bookId);
+                    $('#title').val(book.title);
+                    $('#type').val(book.type);
+                    $('#pubId').val(book.pubId);
+                    $('#price').val(book.price);
+                    $('#advance').val(book.advance);
+                    $('#royalty').val(book.royalty);
+                    $('#ytdSales').val(book.ytdSales);
+                    $('#notes').val(book.notes);
+                    if (book.publishedDate) {
+                        $('#publishedDate').val(book.publishedDate.substring(0, 16));
+                    } else {
+                        $('#publishedDate').val('');
+                    }
+
+                    // Map author IDs
+                    let selAuthIds = book.bookAuthors ? book.bookAuthors.map(ba => ba.authorId.toString()) : [];
+                    $('#authorIds').val(selAuthIds).trigger('change');
+
+                    $('#bookModalLabel').text('Edit Book: ' + book.title);
+                    modalInstance.show();
+                },
+                error: function (err) {
+                    console.error('Error fetching book details', err);
+                    alert('Failed to load book for editing.');
+                }
+            });
+        }
+
+        function saveBook() {
+            let id = parseInt($('#bookId').val());
+            let isUpdate = id > 0;
+
+            let selectedAuthorIds = $('#authorIds').val() || [];
+            selectedAuthorIds = selectedAuthorIds.map(a => parseInt(a));
+
+            // Build JSON object matching BookCreateUpdateDto model
+            let bookData = {
+                title: $('#title').val(),
+                type: $('#type').val(),
+                pubId: parseInt($('#pubId').val()) || null,
+                price: parseFloat($('#price').val()) || 0,
+                advance: parseFloat($('#advance').val()) || 0,
+                royalty: parseFloat($('#royalty').val()) || 0,
+                ytdSales: parseInt($('#ytdSales').val()) || 0,
+                notes: $('#notes').val(),
+                authorIds: selectedAuthorIds
+            };
+
+            if (id > 0) {
+                bookData.bookId = id;
+            }
+
+            let pubDateStr = $('#publishedDate').val();
+            if (pubDateStr) {
+                bookData.publishedDate = new Date(pubDateStr).toISOString();
+            } else {
+                bookData.publishedDate = null; // Will trigger defaults on backend
+            }
+
+            $.ajax({
+                url: isUpdate ? (apiUrl + '/' + id) : apiUrl,
+                method: isUpdate ? 'PUT' : 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(bookData),
+                success: function () {
+                    modalInstance.hide();
+                    loadBooks();
+                },
+                error: function (err) {
+                    console.error('Error saving book', err);
+                    if (err.responseJSON) {
+                        alert('Validation error: ' + JSON.stringify(err.responseJSON));
+                    } else {
+                        alert('Failed to save book. Make sure Publisher ID exists.');
+                    }
+                }
+            });
+        }
+
+        function deleteBook(id) {
+            if (confirm('Are you sure you want to delete this book? This action cannot be undone.')) {
+                $.ajax({
+                    url: apiUrl + '/' + id,
+                    method: 'DELETE',
+                    success: function () {
+                        loadBooks();
+                    },
+                    error: function (err) {
+                        console.error('Error deleting book', err);
+                        alert('Failed to delete book.');
+                    }
+                });
+            }
+        }
+    </script>
+
+</body>
+
+</html>

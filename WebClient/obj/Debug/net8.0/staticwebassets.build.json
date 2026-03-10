@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "54BRnmORLr0dCkHeV8FHez9wcDnxBuUbzS7y/TOyV3E=",
+  "Source": "WebClient",
+  "BasePath": "_content/WebClient",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
